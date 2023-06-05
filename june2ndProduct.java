@@ -10,6 +10,7 @@ class Product{
     double price;
 
     public double getPrice() {
+
         return price;
     }
     public double getPrice(int quantity) {
