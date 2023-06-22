@@ -22,11 +22,12 @@ public class Students {
         for (Student std : arr1) {
             count = count + std.GPA;
         }
-        for (Student std:arr1){
-            if(count<=(std.GPA* arr1.size())){
-                System.out.println(std.firstName);
+        for (int i = 0; i < arr1.size(); i++) {
+            if (count > (arr1.get(i).GPA * arr1.size())) {
+                arr1.remove(i);
+                i--;
             }
         }
-
+        System.out.println(arr1.size());
     }
 }
