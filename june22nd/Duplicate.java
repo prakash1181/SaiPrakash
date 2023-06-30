@@ -9,7 +9,7 @@ public class Duplicate {
         for(int i=0;i<str.length();i++){
             hs.add(str.substring(i,i+1).toLowerCase());
         }
-        hs.forEach(System.out::println);
+        hs.forEach(System.out::print);
 
     }
 }
